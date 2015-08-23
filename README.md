@@ -29,13 +29,13 @@ This script will read in the test and training data and compile a final
 1. Read in all files from data set
 
 2. Create test.df dataframe of the test data set
-* Assign the features labels to names(X_test)
-* Column bind subject_test and y_test to X_test so links to the subject and activity
+- Assign the features labels to names(X_test)
+- Column bind subject_test and y_test to X_test so links to the subject and activity
 are available in the final dataframe
 
 3. Create train.df dataframe of the training data set
-* Assign the features labels to names(X_train)
-* Column bind subject_train and y_train to X_train so links to the subject and activity
+- Assign the features labels to names(X_train)
+- Column bind subject_train and y_train to X_train so links to the subject and activity
 are available in the final dataframe
 
 4. Create df.full dataframe which is a row binding of test.df and train.df
@@ -45,16 +45,16 @@ the mean and standard deviations of the signal readings
 
 6. Clean up the variable names from original data set with the following transformations
 to remove abbreviations and provide better readability
-* 'f' -> 'Frequency'
-* 't' -> 'Time'
-* 'Acc' -> 'Acceleration'
-* 'Mag' -> 'Magnitude'
-* 'mean()' -> 'Mean'
-* 'std()' -> 'StandardDeviation'
-* 'X' -> 'X.Axis'
-* 'Y' -> 'Y.Axis'
-* 'Z' -> 'Z.Axis'
-* 'BodyBody' -> 'Body'
+- 'f' -> 'Frequency'
+- 't' -> 'Time'
+- 'Acc' -> 'Acceleration'
+- 'Mag' -> 'Magnitude'
+- 'mean()' -> 'Mean'
+- 'std()' -> 'StandardDeviation'
+- 'X' -> 'X.Axis'
+- 'Y' -> 'Y.Axis'
+- 'Z' -> 'Z.Axis'
+- 'BodyBody' -> 'Body'
 
 The final output of run_analysis.R is a single dataframe consisting of
 10299 observations of 68 variables.
